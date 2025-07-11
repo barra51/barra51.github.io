@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+#repo-list {
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.repo-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.repo-card:hover {
+    transform: translateY(-10px);
+}
+
+.repo-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.repo-card-content {
+    padding: 20px;
+}
+
+.repo-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.repo-card p {
+    font-size: 1em;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.repo-card a {
+    font-size: 1.2em;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 0.8em;
+    color: #777;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
